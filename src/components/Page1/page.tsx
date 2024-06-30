@@ -19,7 +19,7 @@ const page = () => {
       setIsPasswordVisible((prevState) => !prevState);
   }
 
-  const handleShow = () => { 
+  const handleShow = () => {
     setShow(!show);
   } 
 

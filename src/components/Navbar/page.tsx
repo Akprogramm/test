@@ -7,17 +7,11 @@ import arrowdown from "./Assets/arrowdown.png";
 import star from "./Assets/star.png";
 import save from "./Assets/save.png";
 import bell from "./Assets/bell.png";
-import shopping from "./Assets/shopping.png"; 
+import shopping from "./Assets/shopping.png";
 
 const page = () => { 
   return (
     <div className="flex justify-evenly w-[1440px] h-[80px] absolute top-[0px] teft-[0px] boxShadow">
-      <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-        crossOrigin="anonymous"
-      /> 
   
       <div className="left flex items-center">
         <Image
