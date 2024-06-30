@@ -11,17 +11,18 @@ import lock from "../Navbar/Assets/lock.png";
 
 const page = () => {
   
-  const [isPasswordVisible, setIsPasswordVisible] = useState(true);
+  // const [isPasswordVisible, setIsPasswordVisible] = useState(true);
 
-  const [show,setShow] = useState(true);
+  // const [show,setShow] = useState(true);
+  const show = true;
 
-  function togglePasswordVisibility() {
-      setIsPasswordVisible((prevState) => !prevState);
-  }
+  // function togglePasswordVisibility() {
+  //     setIsPasswordVisible((prevState) => !prevState);
+  // }
 
-  const handleShow = () => {
-    setShow(!show);
-  } 
+  // const handleShow = () => {
+  //   setShow(!show);
+  // } 
 
   return (
     <div className='relative w-[1440px] h-[678px] bg-[#F7F5F9] top-[86px] left-[0px] '>
@@ -48,8 +49,8 @@ const page = () => {
      <div className="signin flex flex-col items-start p-0 gap-[32px] absolute w-[410px] h-[434px] left-[930px] top-[103px]"> 
 
       <button className="flex flex-row items-start justify-center p-0 gap-[32px] w-[169px] h-[34px]">
-       <div className={`w-[70px] h-[34px] text-[20px] leading-[30px] font-semibold ${show ? "border-b-[3px] border-[#8064A2] text-[#8064A2]" : "text-[#939CA3]"} `} onClick={handleShow}>Sign In</div>
-       <div className={`w-[67px] h-[30px] order-1 text-[20px] leading-[30px] font-semibold text-[#8064A2] ${!show ? "border-b-[3px] border-[#8064A2] text-[#8064A2]" : "text-[#939CA3]"} `} onClick={handleShow}>Join In</div> 
+       <div className={`w-[70px] h-[34px] text-[20px] leading-[30px] font-semibold ${show ? "border-b-[3px] border-[#8064A2] text-[#8064A2]" : "text-[#939CA3]"} `}>Sign In</div>
+       <div className={`w-[67px] h-[30px] order-1 text-[20px] leading-[30px] font-semibold text-[#8064A2] ${!show ? "border-b-[3px] border-[#8064A2] text-[#8064A2]" : "text-[#939CA3]"} `}>Join In</div> 
        </button>
 
        <div className="flex flex-col items-start p-0 gap-[28px] w-[410px] h-[368px] order-1">
@@ -88,15 +89,15 @@ const page = () => {
         {/* <input className='w-[410px] h-[40px] flex flex-row justify-center items-center p-[12px] gap-[312px] text-[12px] text-[#FFFFFF] order-1 box-border border-[1px] border-[#EBEDF0] rounded-[8px]' type="password" placeholder='Password'/>  */}
 
         <input
-                type={isPasswordVisible ? "text" : "password"}
+                type={"password"}
                 placeholder="Password"
                 className="w-[410px] h-[40px] flex flex-row justify-center items-center p-[12px] gap-[312px] text-[12px] text-[#FFFFFF] order-1 box-border border-[1px] border-[#EBEDF0] rounded-[8px]"
             />
             <button
                 className="absolute top-[300px] right-[10px] text-gray-600"
-                onClick={togglePasswordVisibility}
+                // onClick={togglePasswordVisibility}
             >
-                {isPasswordVisible ? 
+                {/* {isPasswordVisible ? 
                 (
                   <Image className='h-4 w-4' src={hidden} alt="hidden" />
               ) : (
@@ -114,7 +115,7 @@ const page = () => {
                             d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88"
                         />
                     </svg>
-                ) }
+                ) } */}
             </button> 
 
 
