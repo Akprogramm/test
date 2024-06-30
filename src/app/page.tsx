@@ -10,7 +10,7 @@ import Bottombar from "../components/Bottombar/page"
 export default function Home() { 
   return (
     <main className="">
-      <div className="flex flex-col justify-center items-center min-w-fit"> 
+      <div className="flex flex-col justify-center items-center min-w-fit max-w-screen-fit"> 
       <Navbar/> 
       <Page1/>
       <Page2/>
